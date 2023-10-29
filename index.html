@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>じゃんけんアプリ</h1>
+<div class="pictures">
+<img class="kinnniku" src="https://ogre.natalie.mu/artist/7146/20220228/nakayamakinnikun_art202202.jpg?imwidth=400&imdensity=1" alt="きんにくん">
+<img class="gojita" src="https://i-ogp.pximg.net/c/540x540_70/img-master/img/2021/09/19/12/06/18/92853839_p0_square1200.jpg" alt="ゴジータ">
+</div>
+
+<div class="botton">
+    <button class="janken" onclick="audio()" data-choice="rock">グー</button>
+    <button class="janken" onclick="audio()" data-choice="scissors">チョキ</button>
+    <button class="janken" onclick="audio()" data-choice="paper">パー</button>
+</div>
+
+<audio id="btn_audio">
+  <source src="kani-kami.mp3" type="audio/mp3">
+</audio>
+  
+<div class="result">
+<h2>なかやまきんにくんとのじゃんけん結果</h2>
+<p id="result"></p>   
+</div>
+
+<div class="heading">
+    <h2 class="faq-text">FAQコーナー</h2>
+</div>
+
+  <div class="faq">
+    <!-- ここアコーディオン部分 -->
+    <ul id="faq-list">
+      <li class="faq-list-item">
+        <h3 class="question">なかやまきんに君は何者ですか？</h3>
+        <span>+</span>
+        <div class="answer">
+          <h3>彼は、ゴジータのじゃんけん相手です。</h3>
+        </div>
+      </li>
+      <li class="faq-list-item">
+        <h3 class="question">じゃんけん結果はどこに表示されますか？</h3>
+        <span><a href="#faq">+</a></span>
+        <div class="answer">
+          <h3>なかやまきんに君の下にじゃんけんの結果が表示されます。</h3>
+        </div>
+        <li class="faq-list-item">
+          <h3 class="question">料金は必要ですか？</h3>
+          <span><a href="#faq">+</a></span>
+          <div class="answer">
+            <h3>会員になると、じゃんけんをし放題、かつ、コミュニティに参加できます。</h3>
+          </div>
+      <div id="faq"></div>
+
+      </li>
+    </ul>
+
+    <main class="main flow">
+      <h1 class="main__heading">Pricing</h1>
+      <div class="main__cards cards">
+        <div class="cards__inner">
+          <div class="cards__card card">
+            <h2 class="card__heading">Basic</h2>
+            <p class="card__price">$9.99</p>
+            <ul role="list" class="card__bullets flow">
+              <li>Access to standard businesses and support plans</li>
+              <li>Email support</li>
+            </ul>
+            <a href="#basic" class="card__cta cta">Get Started</a>
+          </div>
+    
+          <div class="cards__card card">
+            <h2 class="card__heading">Pro</h2>
+            <p class="card__price">$19.99</p>
+            <ul role="list" class="card__bullets flow">
+              <li>Access to advanced businesses and support plans</li>
+              <li>Priority Email support</li>
+              <li>Exclusive access to live Q&A sessions</li>
+            </ul>
+            <a href="#pro" class="card__cta cta">Upgrade to Pro</a>
+          </div>
+    
+          <div class="cards__card card">
+            <h2 class="card__heading">Ultimate</h2>
+            <p class="card__price">$29.99</p>
+            <ul role="list" class="card__bullets flow">
+              <li>Access to all premium businesses and support plans</li>
+              <li>24/7 Priority support</li>
+              <li>1-on-1 virtual coaching session every month</li>
+              <li>Exclusive content and early access to new features</li>
+            </ul>
+            <a href="#ultimate" class="card__cta cta">Go Ultimate</a>
+          </div>
+        </div>
+        
+        <div class="overlay cards__inner"></div>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/sample.js"></script>
+   
+</body>
+</html>
